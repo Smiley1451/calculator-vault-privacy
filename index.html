@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator Vault Privacy Policy</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <div class="logo-wrap">
+        <img src="logo.svg" alt="Calculator Vault logo" class="logo" />
+      </div>
+      <p class="eyebrow">Privacy Policy</p>
+      <h1>Calculator Vault</h1>
+      <p class="subtitle">Protecting your personal files while respecting your privacy.</p>
+      <p class="updated">Last Updated: <span id="last-updated"></span></p>
+    </header>
+
+    <section class="content">
+      <p>Calculator Vault is designed to protect your personal files while respecting your privacy. This app operates primarily offline, and we do not collect or transmit your personal data.</p>
+
+      <article>
+        <h2>1. Information Collection and Use</h2>
+        <p>Calculator Vault does not require account registration or personal information such as name, email address, or phone number.</p>
+
+        <div class="bullet-block">
+          <h3>User Files (Photos, Videos, Documents)</h3>
+          <p>When you choose to secure files, they are encrypted locally on your device using industry-standard AES-256 encryption. These files never leave your device and are not uploaded to any server.</p>
+        </div>
+
+        <div class="bullet-block">
+          <h3>Private Browser</h3>
+          <p>The app includes a private browser feature for user convenience. This feature uses internet access to load web pages. The app itself does not store or track browsing activity. However, third-party websites may collect data according to their own privacy policies.</p>
+        </div>
+      </article>
+
+      <article>
+        <h2>2. Permissions and Their Purpose</h2>
+        <p>Calculator Vault requests only the minimum permissions required:</p>
+        <ul>
+          <li><strong>Internet Access:</strong> Used exclusively for the private browser feature.</li>
+          <li><strong>Notifications:</strong> Used to display progress updates during file encryption and restoration.</li>
+          <li><strong>Foreground Service:</strong> Used to ensure long-running tasks such as encryption and decryption complete reliably.</li>
+          <li><strong>File Access (via System Picker):</strong> The app uses Android’s Storage Access Framework (SAF), meaning it can only access files that you explicitly select. The app does not have access to all files on your device.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h2>3. Data Storage and Security</h2>
+        <ul>
+          <li><strong>Local Storage Only:</strong> All encrypted files are stored within the app’s private storage area on your device.</li>
+          <li><strong>Encryption:</strong> Files are secured using AES-256 encryption.</li>
+          <li><strong>PIN Protection:</strong> Access to the vault is protected by a PIN. The PIN is never stored in plain text. A secure hashed version is stored locally for authentication.</li>
+          <li><strong>Data Control:</strong> All data remains under your control. You can delete files at any time from within the app or by clearing app data.</li>
+        </ul>
+      </article>
+
+      <article>
+        <h2>4. Data Sharing</h2>
+        <p>Calculator Vault does not sell, share, or transfer any user data to third parties.</p>
+        <p>The app does not use analytics SDKs, advertising SDKs, or remote data collection services.</p>
+      </article>
+
+      <article>
+        <h2>5. Transparency</h2>
+        <p>This application includes a secure vault feature for protecting user-selected files. All functionality is disclosed within the app interface and description. The app does not perform any hidden or deceptive operations.</p>
+      </article>
+
+      <article>
+        <h2>6. Children’s Privacy</h2>
+        <p>Calculator Vault is not intended for children under the age of 13. The app does not knowingly collect personal information from children.</p>
+      </article>
+
+      <article>
+        <h2>7. Data Deletion</h2>
+        <p>All data is stored locally on your device. You can permanently delete all stored data by clearing app data or uninstalling the application.</p>
+      </article>
+
+      <article>
+        <h2>8. Changes to This Privacy Policy</h2>
+        <p>We may update this policy from time to time. Any changes will be reflected on this page.</p>
+      </article>
+
+      <article>
+        <h2>9. Contact Us</h2>
+        <p>If you have any questions, contact:</p>
+        <p><a href="mailto:official.prohands@gmail.com">official.prohands@gmail.com</a></p>
+      </article>
+    </section>
+  </main>
+
+  <script>
+    const today = new Date();
+    const formatted = today.toLocaleDateString(undefined, {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    });
+    document.getElementById('last-updated').textContent = formatted;
+  </script>
+</body>
+</html>

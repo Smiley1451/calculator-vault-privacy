@@ -1,0 +1,145 @@
+:root {
+  color-scheme: light;
+  --bg: #f5f7fb;
+  --surface: #ffffff;
+  --surface-strong: #f1f5fb;
+  --text: #111827;
+  --muted: #4b5563;
+  --accent: #2563eb;
+  --border: #d1d5db;
+  --radius: 24px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, #eef4ff 0%, var(--bg) 45%);
+  color: var(--text);
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 24px 48px;
+}
+
+.hero {
+  padding: 32px;
+  margin-bottom: 32px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 24px 80px rgba(15, 23, 42, 0.08);
+}
+
+.logo-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.logo {
+  width: 96px;
+  max-width: 100%;
+  height: auto;
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 1.05;
+}
+
+.subtitle {
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.updated {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.content article {
+  margin-bottom: 30px;
+  padding: 26px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+}
+
+.content h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 1.3rem;
+}
+
+.content h3 {
+  margin: 16px 0 8px;
+  font-size: 1.05rem;
+}
+
+.content p,
+.content li {
+  margin: 0 0 12px;
+  line-height: 1.75;
+  color: var(--muted);
+}
+
+.content ul {
+  padding-left: 1.3rem;
+  margin: 0;
+}
+
+.content li {
+  margin-bottom: 10px;
+}
+
+.bullet-block {
+  padding: 18px;
+  background: var(--surface-strong);
+  border-radius: 18px;
+  border: 1px solid rgba(209, 213, 219, 0.7);
+}
+
+.bullet-block h3 {
+  margin: 0 0 10px;
+  color: var(--text);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 680px) {
+  .container {
+    padding: 24px 16px 36px;
+  }
+
+  .hero,
+  .content article {
+    padding: 24px;
+  }
+}
